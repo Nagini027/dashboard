@@ -43,7 +43,7 @@ const OrderTable = () => {
 
   const statusClasses = {
     Delivered:
-      "bg-green-700 hover:bg-green-800 text-green-500 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
+      "bg-green-700 hover:bg-green-800 text-white focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
     Cancelled:
       "bg-red-700 hover:bg-red-800 focus:ring-red-300 text-red-400 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900",
     Pending:
