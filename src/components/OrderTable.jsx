@@ -43,7 +43,7 @@ const OrderTable = () => {
 
   const statusClasses = {
     Delivered:
-      "bg-green-700 hover:bg-green-800 text-green-400 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
+      "bg-green-700 hover:bg-green-800 text-green-500 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
     Cancelled:
       "bg-red-700 hover:bg-red-800 focus:ring-red-300 text-red-400 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900",
     Pending:
@@ -77,8 +77,11 @@ const OrderTable = () => {
                 scope="row"
                 className="flex items-center px-6 py-2  whitespace-nowrap "
               >
-                <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
-                  <MdMyLocation />
+                <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                  <img
+                    src="https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg"
+                    className="rounded-full"
+                  />
                 </div>
                 <div className="text-base font-normal">{order.customer}</div>
               </th>

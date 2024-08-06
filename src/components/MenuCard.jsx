@@ -7,7 +7,7 @@ import { BiDish } from "react-icons/bi";
 function MenuCard() {
   return (
     <>
-      <div className="bg-gray-900 text-white p-2 rounded-lg max-w-sm p-2">
+      <div className="bg-gray-900 text-white p-2 rounded-lg md:max-w-sm w-full">
         <div className="space-y-4 overflow-y-auto max-h-96 -ml-3 p-3">
           {/*  */}
           <div className="flex justify-between ">

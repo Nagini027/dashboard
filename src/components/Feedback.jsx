@@ -3,35 +3,72 @@ import React from "react";
 const feedbacks = [
   {
     name: "Jenny Wilson",
-    avatar: "https://via.placeholder.com/50",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
     rating: 5,
     feedback:
       "The food was excellent and so was the service. I had the main course with the side dish, which was awesome. I had a burger with veggies (gluten-free) which was also very good. They were very conscientious about gluten allergies.",
   },
   {
     name: "Dianne Russell",
-    avatar: "https://via.placeholder.com/50",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
     rating: 4,
     feedback:
       "We enjoyed the Eggs Benedict served on homemade focaccia bread and hot coffee. Perfect service.",
   },
   {
     name: "Devon Lane",
-    avatar: "https://via.placeholder.com/50",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
     rating: 5,
     feedback:
       "Homemade waffles are a winner. For those who love a rustic and authentic taste!",
   },
   {
     name: "Devon Lane",
-    avatar: "https://via.placeholder.com/50",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
     rating: 5,
     feedback:
       "Homemade waffles are a winner. For those who love a rustic and authentic taste!",
   },
   {
     name: "Devon Lane",
-    avatar: "https://via.placeholder.com/50",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
+    rating: 5,
+    feedback:
+      "Homemade waffles are a winner. For those who love a rustic and authentic taste!",
+  },
+  {
+    name: "Devon Lane",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
+    rating: 5,
+    feedback:
+      "Homemade waffles are a winner. For those who love a rustic and authentic taste!",
+  },
+  {
+    name: "Devon Lane",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
+    rating: 5,
+    feedback:
+      "Homemade waffles are a winner. For those who love a rustic and authentic taste!",
+  },
+  {
+    name: "Devon Lane",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
+    rating: 5,
+    feedback:
+      "Homemade waffles are a winner. For those who love a rustic and authentic taste!",
+  },
+  {
+    name: "Devon Lane",
+    avatar:
+      "https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg",
     rating: 5,
     feedback:
       "Homemade waffles are a winner. For those who love a rustic and authentic taste!",
@@ -40,7 +77,7 @@ const feedbacks = [
 
 const Feedback = () => {
   return (
-    <div className="bg-gray-900 text-white p-4 rounded-lg max-w-md ">
+    <div className="bg-gray-900 text-white p-4 rounded-lg md:max-w-md w-full ">
       <h2 className="text-lg font-semibold mb-4">Customer's Feedback</h2>
       <div className="space-y-4 overflow-y-auto max-h-96 -ml-3">
         {feedbacks.map((item, index) => (

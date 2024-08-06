@@ -3,16 +3,18 @@ import { FaLongArrowAltDown } from "react-icons/fa";
 import { FaBasketShopping } from "react-icons/fa6";
 import { IoMdArrowDropup } from "react-icons/io";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import { CircularProgressbar } from "react-circular-progressbar";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import { BsFillHandbagFill } from "react-icons/bs";
 import { AiFillDollarCircle } from "react-icons/ai";
+
+import "react-circular-progressbar/dist/styles.css";
 function Card() {
   const value = 0.7;
   return (
     <div className="">
-      <div class="flex flex-wrap  px-1 mt-3">
+      <div class="md:flex md:flex-wrap   px-1 mt-3">
         {/*1  */}
-        <div class="p-2 max-w-48 max-h-52  ">
+        <div class="p-2 md:max-w-48 w-full max-h-52  ">
           <div class=" rounded-lg  dark:bg-gray-800 bg-[#121026] shadow px-4 pt-3 pb-1">
             <div class="  mb-3">
               <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-lg bg-blue-950 dark:bg-indigo-500  text-white flex-shrink-0">
@@ -35,7 +37,7 @@ function Card() {
         </div>
 
         {/*  2*/}
-        <div class="p-2 max-w-48 max-h-52 ">
+        <div class="p-2 md:max-w-48 w-full max-h-52 ">
           <div class=" rounded-lg  dark:bg-gray-800 bg-[#121026]  px-4 pt-3 pb-1">
             <div class="  mb-3">
               <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-lg dark:bg-indigo-500 bg-green-900 text-white flex-shrink-0">
@@ -59,11 +61,11 @@ function Card() {
         </div>
 
         {/*  */}
-        <div class="p-2 max-w-48 max-h-52 ">
+        <div class="p-2 md:max-w-48  w-full max-h-52 ">
           <div class=" rounded-lg  dark:bg-gray-800 bg-[#121026] px-4 pt-3 pb-1">
             <div class="  mb-3">
-              <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-lg dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
-                <BsFillHandbagFill className="text-2xl" />
+              <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-lg dark:bg-indigo-500 bg-red-900 text-white flex-shrink-0">
+                <BsFillHandbagFill className="text-2xl text-red-600" />
               </div>
               <p className="text-sm font-medium text-white mt-1 ">
                 Total Cancelled
@@ -81,7 +83,7 @@ function Card() {
           </div>
         </div>
         {/* 4 */}
-        <div class="p-2 max-w-48 max-h-52 ">
+        <div class="p-2 md:max-w-48 w-full max-h-52 ">
           <div class=" rounded-lg  dark:bg-gray-800 bg-[#121026]  px-4 pt-3 pb-1">
             <div class="  mb-3">
               <div class="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-lg dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
@@ -106,8 +108,8 @@ function Card() {
           </div>
         </div>
         {/*5  */}
-        <div class="p-2 max-w-96 max-h-52 ">
-          <div class=" flex justify-between rounded-lg  dark:bg-gray-800 bg-[#121026] border px-3 pt-1 pb-2">
+        <div class="p-2 md:max-w-96 w-full max-h-52 ">
+          <div class=" flex justify-between rounded-lg  dark:bg-gray-800 bg-[#121026]  px-3 pt-1 pb-2">
             <div>
               <p className="text-sm font-normal text-gray-400 mt-1 ">
                 Net Profit
@@ -129,6 +131,12 @@ function Card() {
                   value={value}
                   maxValue={1}
                   text={`${value * 100}%`}
+                  styles={buildStyles({
+                    textColor: "#fff",
+                    pathColor: `rgba(62, 152, 199, ${value})`,
+                    trailColor: "#d6d6d6",
+                    backgroundColor: "#3e98c7",
+                  })}
                   Goal
                   completed
                 />

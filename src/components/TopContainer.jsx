@@ -23,8 +23,12 @@ function TopContainer() {
         <i className="profileIcon">
           <FaBell />
         </i>
-        <i className="profileIconb">
-          <FaUserCircle />
+        <i className="profileIconb ">
+          {/* <FaUserCircle /> */}{" "}
+          <img
+            src="https://images.pexels.com/photos/3348748/pexels-photo-3348748.jpeg"
+            className="rounded-full"
+          />
         </i>
       </div>
     </div>

@@ -88,6 +88,9 @@ const BarChart = () => {
       y: {
         beginAtZero: true,
         max: 15000,
+        grid: {
+          color: "rgba(255, 255, 255, 0.2)", // Light color for y-axis grid lines
+        },
         ticks: {
           callback: function (value) {
             return value >= 1000 ? value / 1000 + "k" : value;
@@ -104,13 +107,13 @@ const BarChart = () => {
         <div>
           <h2>Activity</h2>
         </div>
-        <div className="-mr-36 ">
+        <div className="md:-mr-36 -mr-32 ">
           <button
             type="button"
-            class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-gray-600 rounded-full "
+            class="inline-flex items-center px-4 py-2.5 text-sm font-medium text-center text-white bg-gray-600 rounded-full "
           >
             Weekly
-            <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold ">
+            <span class="inline-flex items-center justify-center w-4 h-4  text-xs font-semibold ">
               <RiArrowDownSFill />
             </span>
           </button>
